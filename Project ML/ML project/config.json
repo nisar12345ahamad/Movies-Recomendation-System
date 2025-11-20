@@ -1,0 +1,12 @@
+import json
+
+# Data to save
+secrets = {
+    "api_key": "YOUR_API_KEY"  # <-- apni actual API key yahan daalo
+}
+
+# Create config.json file
+with open("config.json", "w", encoding="utf-8") as f:
+    json.dump(secrets, f, indent=4)
+
+print("config.json file successfully created!")
